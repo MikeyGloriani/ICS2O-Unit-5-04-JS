@@ -68,9 +68,14 @@
         <!-- Numeric Textfield -->
         <form action="#">
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="age"
+            />
             <label class="mdl-textfield__label" for="age">Age...</label>
-          <span class="mdl-textfield__error">Input is not a number!</span>
+            <span class="mdl-textfield__error">Input is not a number!</span>
           </div>
         </form>
         <p>What is the day of the week</p>
@@ -85,13 +90,13 @@
           <option value="saturday">Saturday</option>
         </select>
         <label class="mdl-textfield__label" for="octane"></label>
-          <!-- Raised button with ripple -->
-          <button
-            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-            onclick="myButtonClicked()"
-          >
-            Enter
-          </button>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()"
+        >
+          Enter
+        </button>
         <!-- basic text -->
         <p></p>
         <div id="hello-world"></div>

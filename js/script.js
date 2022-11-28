@@ -19,13 +19,15 @@ if (navigator.serviceWorker) {
 function myButtonClicked(accessGranted) {
   accessGranted = document.getElementById("hello-world").innerHTML
 
-
   //process
-    if ( accessGranted = (age>12 && age<21) || (day == "Tuesday" || day == "Thursday")) {
-      document.getElementById("hello-world").innerHTML =
+  if (
+    (accessGranted =
+      (age > 12 && age < 21) || day == "Tuesday" || day == "Thursday")
+  ) {
+    document.getElementById("hello-world").innerHTML =
       "<p>You can enter the museum</p>"
-    } else {
-      document.getElementById("hello-world").innerHTML =
+  } else {
+    document.getElementById("hello-world").innerHTML =
       "<p>You can not enter the museum</p>"
-    }
+  }
 }
