@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--- ICS2O-My first PWA --->
+<!--- ICS2O-5-04 --->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -45,14 +45,14 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>My first PWA</title>
+  <title>Can you enter the museum</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">My first PWA</span>
+          <span class="mdl-layout-title">Can you enter the museum</span>
         </div>
       </header>
       <main class="mdl-layout__content">
@@ -64,6 +64,7 @@
           height="25%"
         />
         <p></p>
+        <div id="entry"></div>
         <p>How old are you?</p>
         <!-- Numeric Textfield -->
         <form action="#">
@@ -89,7 +90,7 @@
           <option value="friday">Friday</option>
           <option value="saturday">Saturday</option>
         </select>
-        <label class="mdl-textfield__label" for="octane"></label>
+        <label class="mdl-textfield__label" for="day"></label>
         <!-- Raised button with ripple -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
