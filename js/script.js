@@ -16,14 +16,12 @@ if (navigator.serviceWorker) {
 /**
  * This function updates the slider value.
  */
-function updateSliderValue(valueFromSlider) {
-  document.getElementById("slider-value").innerHTML = valueFromSlider
+function myButtonClicked(accessToMuseum) {
+  document.getElementById("hello-world").innerHTML = accessToMuseum
 
   //process
   if (
-    day == "tuesday" ||
-    day == "thursday" ||
-    (valueFromSlider > 12 && valueFromSlider < 21)
+    (day == "tuesday" || day == "thursday") || (age > 12 && age < 21) 
   ) {
     document.getElementById("hello-world").innerHTML =
       "<p>You can enter the museum</p>"
