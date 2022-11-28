@@ -21,7 +21,7 @@ function myButtonClicked(accessGranted) {
 
 
   //process
-    if ( (age>12 && age<21) || (day == "Tuesday" || day == "Thursday")) {
+    if ( accessGranted = (age>12 && age<21) || (day == "Tuesday" || day == "Thursday")) {
       document.getElementById("hello-world").innerHTML =
       "<p>You can enter the museum</p>"
     } else {
