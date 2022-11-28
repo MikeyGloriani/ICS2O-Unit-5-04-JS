@@ -14,11 +14,10 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function displays an alert.
+ * This function updates the slider value.
  */
-function myButtonClicked(accessGranted) {
-  accessGranted =
-    day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21)
+  function updateSliderValue(valueFromSlider) {
+    document.getElementById("slider-value").innerHTML = valueFromSlider
 
   //process
   if (accessGranted == true) {
