@@ -26,8 +26,5 @@ function myButtonClicked(accessGranted) {
   ) {
     document.getElementById("entry").innerHTML =
       "<p>You can enter the museum</p>"
-  } else {
-    document.getElementById("hello-world").innerHTML =
-      "<p>You can not enter the museum</p>"
   }
 }
