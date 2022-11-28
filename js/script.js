@@ -17,14 +17,15 @@ if (navigator.serviceWorker) {
  * This function displays an alert.
  */
 function myButtonClicked(accessGranted) {
-  accessGranted = document.getElementById("hello-world").innerHTML
+  accessGranted = ((day == "Tuesday" || day == "Thursday") || (age > 12 && age < 21))
 
   //process
-  if (
-    (accessGranted =
-      day == "Tuesday" || day == "Thursday" || (age > 12 && age < 21))
-  ) {
+  if (accessGranted = true ) {
     document.getElementById("entry").innerHTML =
       "<p>You can enter the museum</p>"
+  } else {
+    document.getElementById("entry").innerHTML =
+      "<p>You can not enter the museum</p>"
+
   }
 }
