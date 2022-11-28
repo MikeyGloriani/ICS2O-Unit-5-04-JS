@@ -20,7 +20,11 @@ function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 
   //process
-  if ((valueFromSlider > 12 && valueFromSlider < 21) || (day == "tuesday" || day == "thursday")) {
+  if (
+    (valueFromSlider > 12 && valueFromSlider < 21) ||
+    day == "tuesday" ||
+    day == "thursday"
+  ) {
     document.getElementById("hello-world").innerHTML =
       "<p>You can enter the museum</p>"
   } else {
