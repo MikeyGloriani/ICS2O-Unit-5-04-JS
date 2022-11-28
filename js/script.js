@@ -14,17 +14,13 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function updates the slider value.
+ * This function checks for museum eligibility.
  */
 function myButtonClicked() {
   document.getElementById("hello-world").innerHTML
 
   //process
-  if (day == "tuesday" || day == "thursday" || (age > 12 && age < 21)) {
-    document.getElementById("hello-world").innerHTML =
-      "<p>You can enter the museum</p>"
-  } else {
-    document.getElementById("hello-world").innerHTML =
-      "<p>You can not enter the museum</p>"
+  if ((day == "tuesday" || day == "thursday") || (age > 12 && age < 21)) {
+    document.getElementById("hello-world").innerHTML = "<p>You can enter the museum</p>"
   }
 }
