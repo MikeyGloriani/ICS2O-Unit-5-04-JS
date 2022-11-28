@@ -8,12 +8,12 @@
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Mikey Gloriani" />
     <meta name="theme-color" content="#FFFFFF" />
-    <title>GitHub page as PWA template</title>
+    <title>If Else If</title>
     <link
       rel="canonical"
-      href="https://mikeygloriani.github.io/ICS2O-Template-PWA/"
+      href="https://mikeygloriani.github.io/ICS2O-Unit-5-04-JS/"
     />
-    <link rel="manifest" href="/ICS2O-Template-PWA/manifest.webmanifest" />
+    <link rel="manifest" href="/ICS2O-Unit-5-04-JS/manifest.webmanifest" />
     <link rel="stylesheet" href="./css/style.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -64,12 +64,34 @@
           height="25%"
         />
         <p></p>
-        <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Say "Hello, World!"
+        <p>How old are you?</p>
+        <!-- Numeric Textfield -->
+        <form action="#">
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="age">
+            <label class="mdl-textfield__label" for="age">Age...</label>
+          <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <p>What is the day of the week</p>
+        <select class="mdl-textfield__input" id="day" name="day">
+          <option></option>
+          <option value="sunday">Sunday</option>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+        </select>
+        <label class="mdl-textfield__label" for="octane">Put in the Day of the Week</label>
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked()"
+          >
+            Enter
+          </button>
         </button>
         <!-- basic text -->
         <p></p>
