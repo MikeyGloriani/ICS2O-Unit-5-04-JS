@@ -16,7 +16,9 @@ if (navigator.serviceWorker) {
 /**
  * This function checks for museum eligibility.
  */
-function myButtonClicked() {
+function myButtonClicked(museumEligibility) {
+
+  document.getElementById("hello-world").innerHTML = museumEligibility
   var age = parseInt(document.getElementById("age").id)
   var tuesday = document.getElementById("tuesday").value
   var thursday = document.getElementById("thursday").value
