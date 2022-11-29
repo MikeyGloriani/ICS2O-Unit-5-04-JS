@@ -28,6 +28,6 @@ function myButtonClicked() {
       "<p>You can enter the museum</p>"
   } else { 
       document.getElementById("hello-world").innerHTML =
-    "<p>You can enter the museum</p>"
+    "<p>Sorry, you can't enter the museum</p>"
   }
 }
