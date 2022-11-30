@@ -18,12 +18,12 @@ if (navigator.serviceWorker) {
  */
 function myButtonClicked(museumEligibility) {
   document.getElementById("hello-world").innerHTML = museumEligibility
-  var age = parseInt(document.getElementById("age").innerHTML)
-  var tuesday = document.getElementById("tuesday").innerHTML
+  var age = parseInt(document.getElementById("age").value)
+  var tuesday = document.getElementById("tuesday").id
   var thursday = document.getElementById("thursday").innerHTML
 
   //process
-  if (tuesday == true || thursday == true || (age > 12 && age < 21)) {
+  if ((tuesday == true || thursday == true) || (age > 12 && age < 21)) {
     document.getElementById("hello-world").innerHTML =
       "<p>You can enter the museum</p>"
   } else {
