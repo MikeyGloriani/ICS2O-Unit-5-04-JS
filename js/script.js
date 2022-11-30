@@ -19,8 +19,8 @@ if (navigator.serviceWorker) {
 function myButtonClicked(museumEligibility) {
   document.getElementById("hello-world").innerHTML = museumEligibility
   var age = parseInt(document.getElementById("age").value)
-  var tuesday = document.getElementById("tuesday").id
-  var thursday = document.getElementById("thursday").innerHTML
+  var tuesday = document.getElementById("tuesday")
+  var thursday = document.getElementById("thursday")
 
   //process
   if ((tuesday == true || thursday == true) || (age > 12 && age < 21)) {

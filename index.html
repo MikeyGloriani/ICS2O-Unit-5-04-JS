@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--- ICS2O-5-04 --->
+<!--- ICS2O-5-04-JS --->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Working with more If statements" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Mikey Gloriani" />
     <meta name="theme-color" content="#FFFFFF" />
@@ -45,7 +45,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
   </head>
-  <title>Can you enter the museum</title>
+  <title>Can you enter the museum?</title>
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <script src="./js/script.js"></script>
@@ -64,6 +64,44 @@
           height="25%"
         />
         <p></p>
+            <!-- Numeric Textfield -->
+        <form action="#">
+          <p>How old are you?</p>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="number"
+              step=".01"
+              placeholder="e.g. 15"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="age"
+              aria-label="age"
+            />
+            <label class="mdl-textfield__label" for="age">Age...</label>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+          </div>
+        </form>
+        <!-- Select Element-->
+              <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <select class="mdl-textfield__input" id="day" name="day">
+          <option></option>
+          <option value="sunday">Sunday</option>
+          <option value="monday">Monday</option>
+          <option value="tuesday">Tuesday</option>
+          <option value="wednesday">Wednesday</option>
+          <option value="thursday">Thursday</option>
+          <option value="friday">Friday</option>
+          <option value="saturday">Saturday</option>
+        </select>
+        <label class="mdl-textfield__label" for="day">Day of the week</label>
+      </div>
+        <!-- Raised button with ripple -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="myButtonClicked()"
+        >
+          Enter
+        </button>
         <p></p>
         <div id="hello-world"></div>
       </main>
