@@ -1,0 +1,28 @@
+<mxfile host="65bd71144e">
+    <diagram id="rREfeuvEBddnG40vrKr0" name="Page-1">
+        <mxGraphModel dx="594" dy="561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Vertical Container" style="swimlane;" parent="1" vertex="1">
+                    <mxGeometry x="180" y="200" width="420" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="How old are you?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry y="40" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Age: 8" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="10" y="70" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="You can not enter the Museum" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry y="180" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="What is the date today?" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry y="110" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Wednesday" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="2" vertex="1">
+                    <mxGeometry x="10" y="150" width="70" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
