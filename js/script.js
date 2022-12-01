@@ -15,7 +15,7 @@ if (navigator.serviceWorker) {
 
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML
-  "Your age" + valueFromSlider
+  "Your age " + valueFromSlider
 }
 
 /**
@@ -25,7 +25,7 @@ function myButtonClicked() {
   const day = document.getElementById("day")
   const age = document.getElementById("slider-value").value
   //process
-  if ((tuesday == true || thursday == true) || (age > 12 && age < 21)) {
+  if ((day == "tuesday" || day == "thursday" ) || (age > "12" && age < "21")) {
     document.getElementById("hello-world").innerHTML =
       "<p>You can enter the museum</p>"
   } else {
