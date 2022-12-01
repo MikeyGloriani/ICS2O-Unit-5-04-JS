@@ -69,19 +69,19 @@
         <!-- Note: I added and ID to this component, so I could reference it in code -->
         <!-- Note: I also placed it inside a "label" for accessability -->
         <label>
-          Set your age between 1-20+
+          Set your age between 1-25+
           <input
             id="slider"
             class="mdl-slider mdl-js-slider"
             type="range"
             min="1"
-            max="20"
+            max="25"
             value="10"
             tabindex="0"
             onchange="updateSliderValue(this.value)"
           />
           <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-            <select class="mdl-textfield__input" id="day" name="day">
+            <select class="mdl-textfield__input" id="day" name="day-of-week">
               <option></option>
               <option value="sunday">Sunday</option>
               <option value="monday">Monday</option>
@@ -90,9 +90,8 @@
               <option value="thursday">Thursday</option>
               <option value="friday">Friday</option>
               <option value="saturday">Saturday</option>
-              
             </select>
-            <label class="mdl-textfield__label" for="day">Day of the week</label>
+            <label class="mdl-textfield__label" for="day-of-week">Day of the week</label>
           </div>
           <!-- Raised button with ripple -->
           <button
