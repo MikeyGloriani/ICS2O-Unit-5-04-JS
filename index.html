@@ -65,45 +65,42 @@
         />
         <p></p>
         <div id="slider-value">?</div>
-        <!--Sliders-->
+        <!-- Slider with Starting Value -->
+        <!-- Note: I added and ID to this component, so I could reference it in code -->
+        <!-- Note: I also placed it inside a "label" for accessability -->
         <label>
-          Set your age between 1-25+
+          Set your age between 1-20+
           <input
             id="slider"
             class="mdl-slider mdl-js-slider"
             type="range"
             min="1"
-            max="25"
+            max="20"
             value="10"
             tabindex="0"
             onchange="updateSliderValue(this.value)"
           />
-          </label>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <select class="mdl-textfield__input" id="day" name="day">
+              <option></option>
+              <option value="sunday">Sunday</option>
+              <option value="monday">Monday</option>
+              <option value="tuesday">Tuesday</option>
+              <option value="wednesday">Wednesday</option>
+              <option value="thursday">Thursday</option>
+              <option value="friday">Friday</option>
+              <option value="saturday">Saturday</option>
+              
+            </select>
+            <label class="mdl-textfield__label" for="day">Day of the week</label>
           </div>
-        </form>
-        <!-- Select Element-->
-        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-        <select class="mdl-textfield__input" id="day" name="day">
-          <option></option>
-          <option value="sunday">Sunday</option>
-          <option value="monday">Monday</option>
-          <option value="tuesday">Tuesday</option>
-          <option value="wednesday">Wednesday</option>
-          <option value="thursday">Thursday</option>
-          <option value="friday">Friday</option>
-          <option value="saturday">Saturday</option>
-        </select>
-        <label class="mdl-textfield__label" for="day">Day of the week</label>
-      </div>
-        <!-- Raised button with ripple -->
-        <p></p>
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Enter
-        </button>
-        <p></p>
+          <!-- Raised button with ripple -->
+          <button
+            class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked()"
+          >
+            Enter
+          </button>
         <div id="hello-world"></div>
       </main>
     </div>
