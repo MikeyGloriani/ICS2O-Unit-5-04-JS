@@ -64,19 +64,20 @@
           height="25%"
         />
         <p></p>
-            <!-- Numeric Textfield -->
-        <form action="#">
-          <p>How old are you?</p>
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="number"
-              step=".01"
-              placeholder="e.g. 15"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="age"
-              aria-label="age"
-            />
+        <div id="slider-value">?</div>
+        <!--Sliders-->
+        <label>
+          Set your age between 1-25+
+          <input
+            id="slider"
+            class="mdl-slider mdl-js-slider"
+            type="range"
+            min="1"
+            max="25"
+            value="10"
+            tabindex="0"
+            onchange="updateSliderValue(this.value)"
+          />
             <label class="mdl-textfield__label" for="age">Age...</label>
             <span class="mdl-textfield__error">Input is not a number!</span>
           </div>

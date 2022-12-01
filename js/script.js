@@ -13,15 +13,17 @@ if (navigator.serviceWorker) {
   })
 }
 
+function updateSliderValue(valueFromSlider) {
+  document.getElementById("slider-value").innerHTML
+  "Your age" + valueFromSlider
+}
+
 /**
  * This function checks for museum eligibility.
  */
-function myButtonClicked(museumEligibility) {
-  document.getElementById("hello-world").innerHTML = museumEligibility
-  var age = parseInt(document.getElementById("age").value)
-  var tuesday = document.getElementById("tuesday").value
-  let thursday = document.getElementById("thursday").value
-
+function myButtonClicked() {
+  const day = document.getElementById("day")
+  const age = document.getElementById("slider-value").value
   //process
   if ((tuesday == true || thursday == true) || (age > 12 && age < 21)) {
     document.getElementById("hello-world").innerHTML =
